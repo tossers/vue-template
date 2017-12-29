@@ -11,13 +11,42 @@
     };
 </script>
 
-<style>
-    #app {
+<style lang="less">
+    html, body, #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+        margin: 0;
+        height: 100%;
+        min-width: 1200px;
+    }
+    #app {
+        font-size: 0.1rem;
+    }
+    button {
+        position: relative;
+        &:active:after {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            bottom: -1px;
+            right: -1px;
+            border-radius: inherit;
+            border: 0 solid #108ee9;
+            opacity: .4;
+            -webkit-animation: buttonEffect .4s;
+            animation: buttonEffect .4s;
+        }
+    }
+
+    @keyframes buttonEffect {
+        to {
+            opacity: 0;
+            top: -6px;
+            left: -6px;
+            bottom: -6px;
+            right: -6px;
+            border-width: 6px
+        }
     }
 </style>
+
