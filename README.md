@@ -5,5 +5,6 @@
 
 2.全局button动画
 
-2.postcss-pxtorem + flexible.js 配置样式rem
+3.postcss-pxtorem + flexible.js 配置样式rem
 
+4.使用vuex
