@@ -16,10 +16,9 @@
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         margin: 0;
         height: 100%;
-        min-width: 1200px;
     }
     #app {
-        font-size: 0.1rem;
+        font-size: 16px;
     }
     button {
         position: relative;
