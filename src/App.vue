@@ -13,11 +13,12 @@
 
 <style lang="less">
     html, body, #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
         margin: 0;
         height: 100%;
+        overflow: auto;
     }
     #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
         font-size: 16px;
     }
     button {

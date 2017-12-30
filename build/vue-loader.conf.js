@@ -21,6 +21,9 @@ module.exports = {
         image: 'xlink:href'
     },
     postcss: function () {
-        return [px2rem({rootValue: 37.5})];
+        return [px2rem({
+            rootValue: 120, //iphone6: 23.4375, 1920px: 120
+            propList: ['*', '!border*']
+        })];
     }
 };
