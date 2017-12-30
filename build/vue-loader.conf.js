@@ -23,7 +23,7 @@ module.exports = {
     postcss: function () {
         return [px2rem({
             rootValue: 120, //iphone6: 23.4375, 1920px: 120
-            propList: ['*', '!border*']
+            propList: ['*', '!border*', '!min*']
         })];
     }
 };
