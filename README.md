@@ -7,3 +7,5 @@
 （需要在vue-loader.conf.js设置rootValue: 120, //手机端iphone6: 23.4375, PC端（默认）1920px: 120）
 
 3.使用vuex
+
+4.使用cssModules
