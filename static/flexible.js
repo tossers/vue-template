@@ -6,11 +6,16 @@
         if (!clientWidth) {
             return;
         }
+        var fontSize = clientWidth / 16;
         if (!/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
-            clientWidth = clientWidth > 2000 ? 2000 : clientWidth;
-            clientWidth = clientWidth < 1200 ? 1200 : clientWidth;
+            if (clientWidth >= 1400) {
+                fontSize = 1920 / 16;     //120
+            } else if (clientWidth < 1400) {
+                fontSize = 1600 / 16;      //100
+            }
         }
-        docEl.style.fontSize = (clientWidth / 16) + 'px';
+
+        docEl.style.fontSize = fontSize + 'px';
     };
     if (!doc.addEventListener) {
         return;

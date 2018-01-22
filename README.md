@@ -8,4 +8,3 @@
 
 3.使用vuex
 
-4.使用cssModules

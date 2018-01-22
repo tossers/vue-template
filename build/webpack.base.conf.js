@@ -55,10 +55,10 @@ module.exports = {
             test: /\.less$/,
 
             loader: "style-loader!css-loader!less-loader",
-            options: {
-                modules: true,
-                localIdentName: '[name]_[local]_[hash:base64:5]'
-            }
+            // options: {
+            //     modules: true,
+            //     localIdentName: '[name]_[local]_[hash:base64:5]'
+            // }
         },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
