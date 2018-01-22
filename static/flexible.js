@@ -6,7 +6,7 @@
         if (!clientWidth) {
             return;
         }
-        if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        if (!/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
             clientWidth = clientWidth > 2000 ? 2000 : clientWidth;
             clientWidth = clientWidth < 1200 ? 1200 : clientWidth;
         }
