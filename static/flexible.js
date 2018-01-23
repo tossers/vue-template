@@ -8,10 +8,10 @@
         }
         var fontSize = clientWidth / 16;
         if (!/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
-            if (clientWidth >= 1400) {
-                fontSize = 1920 / 16;     //120
-            } else if (clientWidth < 1400) {
-                fontSize = 1600 / 16;      //100
+            if (clientWidth >= 1450) {
+                fontSize = 120;     //
+            } else if (clientWidth < 1450) {
+                fontSize = 90;      //4/3比例缩放
             }
         }
 
